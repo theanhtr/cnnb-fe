@@ -76,17 +76,3 @@ app.config.globalProperties.$sprintf = sprintf.sprintf;
 app.use(i18n);
 
 app.mount("#app");
-
-/**
- * Hàm dùng để set thông tin về phân trang nhân viên
- * vào local storage
- * @author: TTANH (01/08/2023)
- */
-function employeePageInfo() {
-  localStorage.setItem("pageNumber", 1);
-  localStorage.setItem("pageSize", 10);
-}
-
-if (!localStorage.getItem("pageNumber")) {
-  employeePageInfo();
-}
