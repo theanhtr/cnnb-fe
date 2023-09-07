@@ -1,31 +1,4 @@
 const MISAEnum = {
-  /* các bước khi import excel */
-  IMPORT_STEP: {
-    SELECT_SOURCE_FILE: 0,
-    HEADER_MERGE: 1,
-    DATA_CHECK: 2,
-    IMPORT_RESULT: 3,
-  },
-
-  /* loại import excel */
-  IMPORT_MODE: {
-    ADD: 0,
-    UPDATE: 1,
-  },
-
-  /* kiểm tra các dòng trong file excel */
-  RECORD_CHECK: {
-    INVALID: 0,
-    VALID: 1,
-  },
-
-  /* loại lọc excel */
-  FILTER_EXCEL_DATA_VALIDATE_TYPE: {
-    INVALID: 0,
-    VALID: 1,
-    ALL: 2,
-  },
-
   GENDER: {
     MALE: 0,
     FEMALE: 1,
@@ -37,14 +10,7 @@ const MISAEnum = {
     UPDATE: 1,
     VIEW: 2,
   },
-
-  /* enum sử dụng trong more info nav của add employee popup */
-  MORE_INFO_NAV: {
-    SALARY_INFO: 0,
-    BANK_INFO: 1,
-    CONTACT_INFO: 2,
-  },
-
+  
   /* enum sử dụng cho sự kiện keypress, keyup, keydown */
   KEY_CODE: {
     TAB: 9,
@@ -70,25 +36,6 @@ const MISAEnum = {
     7: 55,
     8: 56,
     9: 57,
-  },
-
-  SUCCESS_CODE: {
-    ADD_INFO_SUCCESS: 1207,
-    IMPORT_EXCEL_REQUEST_SUCCESS: 1210,
-  },
-
-  ERROR_CODE: {
-    CODE_DUPLICATE: 1407,
-    WRONG_FORMAT_CODE: 1408,
-    NOT_FOUND_DATA: 1409,
-    SESSION_IS_OVER: 1410,
-    WRONG_FORMAT_DATE: 1412,
-    EXCEL_HEADER_DUPLICATE: 1425,
-    EXCEL_HEADER_EMPTY: 1426,
-    SHEET_IS_EMPTY: 1427,
-    FORMAT_EXCEL_ERROR: 1428,
-    MAX_SIZE_FILE_ERROR: 1429,
-    EXCEL_HEADER_REQUIRED_NOT_MAP: 1430,
   },
 };
 

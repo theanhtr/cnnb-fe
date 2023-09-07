@@ -1,5 +1,5 @@
 <template>
-  <div class="app-layout">
+  <div class="app-layout flex-column">
     <div class="toast-group">
       <tta-toast
         v-for="toast in $store.state.toasts"
@@ -7,16 +7,25 @@
         :type="toast.type"
         @clickCloseToast="closeToast(toast.id)"
       >
-        {{ toast.text }}
-      </tta-toast>
+        {{ toast.text }}</tta-toast
+      >
     </div>
+    <TheHeader />
     <router-view />
+    <TheFooter />
   </div>
 </template>
 
 <script>
+import TheHeader from "./components/layout/header/TheHeader.vue";
+import TheFooter from "./components/layout/footer/TheFooter.vue";
+
 export default {
   name: "App",
+  components: {
+    TheFooter,
+    TheHeader,
+  },
   methods: {
     /**
      * xử lý xóa 1 toast
@@ -39,5 +48,6 @@ export default {
 .app-layout {
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 </style>

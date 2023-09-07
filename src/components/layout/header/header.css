@@ -1,0 +1,14 @@
+.header {
+  width: 100%;
+  height: 74px;
+  background-color: red;
+  position: sticky;
+}
+
+.header__logo {
+  flex: 1;
+  height: 32px;
+  background-size: auto 32px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
